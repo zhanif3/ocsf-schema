@@ -1067,17 +1067,24 @@
       "caption": "CVSS Depth",
       "description": "The CVSS depth represents a depth of the equation used to calculate CVSS score.",
       "enum": {
-        "Base": {
+        "99": {
+          "caption": "Other",
+          "description": "The state is not mapped. See the <code>state</code> attribute, which contains a data source specific value."
+        },
+        "0": {
+          "caption": "Unknown"
+        }
+        "1": {
           "caption": "Base"
         },
-        "Environmental": {
+        "2": {
           "caption": "Environmental"
         },
-        "Temporal": {
+        "3": {
           "caption": "Temporal"
         }
       },
-      "type": "string_t"
+      "type": "integer_t"
     },
     "desc": {
       "caption": "Description",
